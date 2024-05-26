@@ -1,0 +1,249 @@
+*{
+    list-style: none;
+}
+ul{
+  padding: 0;
+}
+.header{
+    background-color: rgb(189, 156, 219);
+    height: 64px;
+    width: 100%;
+}
+.content{
+  margin-top: 64px;
+}
+.navbar li {
+    list-style-type: none;
+    display: inline-block;
+}
+.btn_navbar-items{
+    height: 64px;
+    line-height: 64px;
+    color: #fff;
+    width: 100px;
+}
+.btn_navbar-items:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.list_diff_page ul li{
+    list-style-type: none;
+  }
+  .list_diff_page_items:hover{
+    background-color: rgba(183, 183, 183, 0.5);
+    color: #000;
+  }
+  .footer_menu{
+    margin-left: 40%;
+  }
+  .menu-list{
+    background-color: #333;
+  }
+  .first-section{
+  background: linear-gradient(0.25turn, #8ab4c6, #e4c2db, #7eb0c6);
+
+  }
+  .first-section__subheader{
+    color: #333;
+  }
+  .first-section-content1 li{
+    display: inline-block;
+  }
+  .btn-subject{
+    border-radius: 10px;
+    background-color: rgba(244, 218, 218, 0.781);
+  }
+  .btn-subject:hover{
+    background-color: rgba(183, 183, 183, 0.5);
+  }
+  .main_subject{
+    background-color: #f0a1dc;
+  }
+  .container_img {
+    position: relative;
+    display: inline-block;
+  }
+.card{
+  transition: transform 0.3s ease;
+  border: 3px solid #8b8888;
+  border-radius: 15px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+}
+  .user-image {
+    border-radius: 8px;
+    transition: filter 0.3s ease;
+  }
+
+  .container_img:hover .user-image {
+    filter: blur(5px); /* Làm mờ hình ảnh khi hover */
+  }
+.card:hover {
+  transform: scale(0.9); /* Phóng to card khi hover */
+}
+
+  .hover_btn {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .container_img:hover .hover_btn {
+    opacity: 1; /* Hiển thị nút khi hover */
+  }
+  .footer{
+    width: 100%;
+  }
+  .top_footer{
+    background-color: #5d8aa9;
+
+  }
+  .form_footer>input{
+    border-radius: 10px;
+    border: none;
+  padding: 10px;
+  }
+  .bot_footer{
+    background-color: #cdcdcd;
+  }
+  .footer-colums{
+    width: 80%;
+  }
+  .btn-like{
+    width: 150px;
+  }
+  
+@media screen and (min-width:426px) {
+    .btn_menu{
+        margin-top: 8px;
+    }
+    
+}
+@media screen and (min-width:769px) {
+  .card{
+    width: 80%;
+    
+  }
+}
+.footer-content{
+  padding: 48px 20px;
+}
+.section-four{
+  background-color: #c1d6e3;
+}.list-feature > ul{
+  list-style-type: none;
+  text-align: center;
+}
+.list-feature > ul>li{
+  display: inline-flex;
+}
+.sub_form{
+  color: #b0b0b0;
+  line-height: 37px;
+}
+.modal{
+  display: none;
+  position: fixed;
+  background-color: rgba(65, 64, 64, 0.726);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+.modal-container{
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  animation: modalFadeIn ease .4s;
+  min-height: 200px;
+  position: relative;
+}
+.header-modal{
+  background-color: #df90b0d3;
+  height: 129px;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 30px;
+}
+.btn-login_modal{
+  background-color: #df90b0d3;
+
+}
+.btn-login_modal:hover{
+  background-color: #e63079d3;
+  
+}
+.modal.open{
+  display: flex;
+}
+.bi-x-circle:hover{
+  color: #000;
+}
+#chatButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#chatBox {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  display: none;
+  z-index: 1000;
+  min-height: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#chatInput, #sendButton{
+  border-radius: 20px;
+}
+@keyframes modalFadeIn {
+  from{
+       opacity: 0;
+       transform: translateY(-140px);
+  }
+  to {
+       opacity: 1;
+       transform: translateY(0);
+  }
+}
+
+@media (max-width:426px) {
+ .btn_navbar-items{
+  display: none;
+ }
+  .row_dec{
+    row-gap: 10px;
+  }
+    .btn_menu{
+        margin-top: 15px;
+    }
+    .navbar
+    {
+        display: none;
+    }
+    .card{
+      width: 100%;
+    }
+}
+@media (max-width:1024px) {
+  .footer-colums{
+    width: 70%;
+  }
+}
+@media screen and (min-width:769px) {
+  /* .content-group-items-img{
+    padding: 0;
+  } */
+  .footer-content{
+    padding: 48px;
+  }
+}
